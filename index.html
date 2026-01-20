@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1.0">
+			<link rel="stylesheet" href="style.css">
+			<title>Pokemon Battle</title>
+		</head>
+		<body>
+    <section class="game-arena">
+      <h2>Pokemon Battle</h2>
+      <div class="pokemon-container">
+        <img src="Pikachu.png" alt="Pikachu" id="pokemon-img">
+        
+        <div class="health-bar-container">
+          <div id="pokemon-hp-bar"></div>
+        </div>
+        <p id="pokemon-hp-text">100 / 100 HP</p>
+      </div>
+      <div class="game-stats">
+        <p>Gold: <span id="gold-display">0</span></p>
+        <button id="buy-potion-btn">
+        Buy Strength Potion (100 Gold)
+        </button>
+      </div>
+      <div class="hero">
+      <button id="lvl-btn">Level Up</button>
+      <p id="level-display">Current Level: 15</p>
+    </div>
+    </section>
+    <div class="grid-container" style="display:none;">
+      <div class="card"><p>BTC</p></div>
+      <div class="card"><p>ETH</p></div>
+      <div class="card"><p>SOL</p></div>
+    </div>
+
+    <script src="script.js"></script>
+		</body>
+	</html>

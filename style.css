@@ -1,0 +1,93 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 0 40px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, button {
+  padding: 12px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column; /* Stacks them vertically for your phone */
+    align-items: center;    /* Centers them horizontally */
+    text-align: center;
+    padding: 20px;
+}
+
+/* This is a "Media Query" - it checks the screen size! */
+@media (min-width: 600px) {
+    .hero {
+        flex-direction: row; /* On a wider screen, put them side-by-side! */
+        justify-content: space-between;
+    }
+  }    
+
+/* On Mobile, let's make the grid stack into 1 column */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.game-arena {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff0f0; /* Light red bg for danger zone */
+}
+
+#pokemon-img {
+    width: 100px;
+    cursor: pointer; /* Shows a hand icon on desktop */
+    transition: transform 0.1s;
+}
+
+#pokemon-img:active {
+    transform: scale(0.9) rotate(5deg); /* Shake effect when hit! */
+}
+
+.health-bar-container {
+    width: 80%;
+    height: 20px;
+    background-color: #ddd;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+#pokemon-hp-bar {
+    width: 100%; /* Starts full */
+    height: 100%;
+    background-color: #ff4444; /* Red for HP */
+    transition: width 0.2s ease; /* Smooth hit animation */
+}
+
+#buy-potion-btn {
+  background-color: green;
+  margin-top: 10px;
+}
